@@ -1,0 +1,17 @@
+﻿<Window x:Class="TMPLaba1_NewFront.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TMPLaba1_NewFront"
+        mc:Ignorable="d"
+        Title="Многосвязные списки" Height="600" Width="600" FontSize="14">
+
+    <DockPanel LastChildFill="False">
+        <Menu DockPanel.Dock="Top" Height="20" FontSize="14">
+            <MenuItem Header="Открыть" FontSize="14" Click="OpenFile_Click"/>
+            <MenuItem Header="Компоненты" Click="OpenComponents_Click"/>
+            <MenuItem Header="Спецификация" Click="OpenSpecification_Click"/>
+        </Menu>
+    </DockPanel>
+</Window>

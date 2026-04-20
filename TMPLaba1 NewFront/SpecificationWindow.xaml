@@ -1,0 +1,39 @@
+﻿<Window x:Class="TMPLaba1_NewFront.SpecificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TMPLaba1_NewFront"
+        mc:Ignorable="d"
+        Title="Спецификация" Height="600" Width="600">
+
+    <Window.Resources>
+        <ContextMenu x:Key="TreeContextMenu">
+            <MenuItem Header="Добавить"/>
+            <MenuItem x:Name="MenuItemDelete" Header="Удалить"/>
+            <MenuItem x:Name="MenuItemRestore" Header="Восстановить"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center" 
+                    Margin="5">
+            <Button Content="Удалить окончательно (Сжать)" 
+                    Click="BtnTruncate_Click" 
+                    Width="180" Height="30"
+                    Margin="5"/>
+            <Button x:Name="BtnShowDeleted"
+                    Content="Показать удаленные"
+                    Click="BtnShowDeleted_Click"
+                    Width="150" Height="30"
+                    Margin="5"/>
+            <Button Content="Восстановить все" 
+                    Click="BtnRestore_Click" 
+                    Width="150" Height="30"
+                    Margin="5"/>
+        </StackPanel>
+        <TreeView x:Name="SpecTreeView" Margin="5"/>
+    </DockPanel>
+</Window>
