@@ -26,3 +26,32 @@ C:\Users\Ярослав\source\repos\TMPLaba1 NewFront\obj\Debug\net8.0-windows\
 C:\Users\Ярослав\source\repos\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ref\TMPLaba1 NewFront.dll
 C:\Users\Ярослав\source\repos\TMPLaba1 NewFront\obj\Debug\net8.0-windows\SpecificationWindow.g.cs
 C:\Users\Ярослав\source\repos\TMPLaba1 NewFront\obj\Debug\net8.0-windows\SpecificationWindow.baml
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.exe
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.deps.json
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.runtimeconfig.json
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.pdb
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\PRDLib.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\bin\Debug\net8.0-windows\PRDLib.pdb
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.csproj.AssemblyReference.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ComponentsWindow.g.cs
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\SpecificationWindow.g.cs
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\App.g.cs
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront_MarkupCompile.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront_MarkupCompile.lref
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ComponentsWindow.baml
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\MainWindow.baml
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\SpecificationWindow.baml
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.g.resources
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.GeneratedMSBuildEditorConfig.editorconfig
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.AssemblyInfoInputs.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.AssemblyInfo.cs
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.csproj.CoreCompileInputs.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.sourcelink.json
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1.6BDF48E5.Up2Date
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\refint\TMPLaba1 NewFront.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.pdb
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.genruntimeconfig.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ref\TMPLaba1 NewFront.dll

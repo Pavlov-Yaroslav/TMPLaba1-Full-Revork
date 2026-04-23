@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TMPLaba1_NewFront"
         mc:Ignorable="d"
-        Title="Спецификация" Height="600" Width="600">
+        Title="Спецификация" Height="700" Width="700">
 
     <Window.Resources>
         <ContextMenu x:Key="TreeContextMenu">
@@ -20,6 +20,10 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Center" 
                     Margin="5">
+            <Button Content="Добавить изделие"
+                    Click="BtnAddProduct_Click"
+                    Width="130" Height="30"
+                    Margin="5"/>
             <Button Content="Удалить окончательно (Сжать)" 
                     Click="BtnTruncate_Click" 
                     Width="180" Height="30"

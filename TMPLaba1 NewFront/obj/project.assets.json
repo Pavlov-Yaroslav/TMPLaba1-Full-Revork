@@ -8,23 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ярослав\\.nuget\\packages\\": {},
+    "C:\\Users\\ledok\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ярослав\\source\\repos\\TMPLaba1 NewFront\\TMPLaba1 NewFront.csproj",
+      "projectUniqueName": "D:\\НГТУ\\4 семестр\\ТиМП\\LAB1.2\\TMPLaba1 NewFront\\TMPLaba1 NewFront.csproj",
       "projectName": "TMPLaba1 NewFront",
-      "projectPath": "C:\\Users\\Ярослав\\source\\repos\\TMPLaba1 NewFront\\TMPLaba1 NewFront.csproj",
-      "packagesPath": "C:\\Users\\Ярослав\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ярослав\\source\\repos\\TMPLaba1 NewFront\\obj\\",
+      "projectPath": "D:\\НГТУ\\4 семестр\\ТиМП\\LAB1.2\\TMPLaba1 NewFront\\TMPLaba1 NewFront.csproj",
+      "packagesPath": "C:\\Users\\ledok\\.nuget\\packages\\",
+      "outputPath": "D:\\НГТУ\\4 семестр\\ТиМП\\LAB1.2\\TMPLaba1 NewFront\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ярослав\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ledok\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -37,7 +37,6 @@
       },
       "frameworks": {
         "net8.0-windows7.0": {
-          "framework": "net8.0-windows7.0",
           "targetAlias": "net8.0-windows",
           "projectReferences": {}
         }
@@ -52,11 +51,10 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0-windows7.0": {
-        "framework": "net8.0-windows7.0",
         "targetAlias": "net8.0-windows",
         "imports": [
           "net461",
@@ -77,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

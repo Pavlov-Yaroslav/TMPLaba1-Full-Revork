@@ -267,9 +267,37 @@ namespace TMPLaba1_NewFront
             }
         }
 
+        private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
+        {
+            string parentName = Microsoft.VisualBasic.Interaction.InputBox(
+                "Введите имя изделия (родитель):",
+                "Добавить изделие",
+                "");
+
+            if (string.IsNullOrEmpty(parentName)) return;
+
+            string childName = Microsoft.VisualBasic.Interaction.InputBox(
+                "Введите имя комплектующего (ребёнок):",
+                "Добавить изделие",
+                "");
+
+            if (string.IsNullOrEmpty(childName)) return;
+
+            try
+            {
+                string result = currentPrsFile.Input($"({parentName}, {childName})");
+                LoadTree();
+                MessageBox.Show(result, "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
         // ============= ВСПОМОГАТЕЛЬНЫЕ МЕТОДЫ =============
 
-        private void LoadTree()
+        private void LoadTree(string forceRootName = null)
         {
             try
             {
@@ -277,27 +305,35 @@ namespace TMPLaba1_NewFront
 
                 var components = GetAllComponents();
                 var relations = GetAllRelations();
+                var relationsMap = BuildRelationsMap(relations);
 
-                if (relations.Count == 0)
+                var rootComponents = FindRootComponents(components, relationsMap);
+
+                // Если явно задан корень — добавляем его, если его ещё нет в списке
+                if (!string.IsNullOrEmpty(forceRootName))
                 {
-                    TreeViewItem infoItem = new TreeViewItem { Header = "Нет связей в спецификации" };
-                    SpecTreeView.Items.Add(infoItem);
-                    return;
+                    var forceRoot = components.FirstOrDefault(c => c.Name == forceRootName);
+                    if (forceRoot != null && rootComponents.All(r => r.Name != forceRootName))
+                    {
+                        rootComponents.Add(forceRoot);
+                    }
                 }
 
-                var relationsMap = BuildRelationsMap(relations);
-                var rootComponents = FindRootComponents(components, relationsMap);
+                if (rootComponents.Count == 0 && relations.Count == 0)
+                {
+                    SpecTreeView.Items.Add(new TreeViewItem { Header = "Нет связей в спецификации" });
+                    return;
+                }
 
                 if (rootComponents.Count == 0)
                 {
-                    TreeViewItem infoItem = new TreeViewItem { Header = "Нет корневых компонентов (изделий)" };
-                    SpecTreeView.Items.Add(infoItem);
+                    SpecTreeView.Items.Add(new TreeViewItem { Header = "Нет корневых компонентов (изделий)" });
                     return;
                 }
 
-                foreach (var root in rootComponents)
+                // ОДИН цикл, отсортированный
+                foreach (var root in rootComponents.OrderBy(r => r.Name))
                 {
-                    // Показываем удалённые компоненты только если showDeleted = true
                     if (!root.IsDeleted || showDeleted)
                     {
                         TreeViewItem rootItem = CreateTreeItem(root.Name, root.IsDeleted, false);
@@ -308,8 +344,7 @@ namespace TMPLaba1_NewFront
             }
             catch (Exception ex)
             {
-                TreeViewItem errorItem = new TreeViewItem { Header = $"Ошибка: {ex.Message}" };
-                SpecTreeView.Items.Add(errorItem);
+                SpecTreeView.Items.Add(new TreeViewItem { Header = $"Ошибка: {ex.Message}" });
                 MessageBox.Show($"Ошибка при загрузке дерева: {ex.Message}");
             }
         }
