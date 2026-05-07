@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\",
+  "WorkspaceRootPath": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\lib\\prs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\prs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:prs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\lib\\prd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\prd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:prd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\lib\\recordprd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\recordprs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:recordprs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\recordprd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:recordprd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\headerprs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:headerprs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\headerprd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:headerprd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|c:\\users\\\u044F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\tmplaba1-full-revork-master\\lib\\ifile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6714648E-D897-12A4-320F-427E47FB822E}|PRDLib.csproj|solutionrelative:ifile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,11 +44,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PRD.cs",
-              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\PRD.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\PRD.cs",
               "RelativeDocumentMoniker": "PRD.cs",
-              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\PRD.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\PRD.cs",
               "RelativeToolTip": "PRD.cs",
-              "ViewState": "AgIAAFoCAAAAAAAAAAAYwPcCAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAN8AAAAAAAAAAAD4v5wAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-19T16:57:46.303Z",
               "IsPinned": true,
@@ -42,11 +58,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PRS.cs",
-              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\PRS.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\PRS.cs",
               "RelativeDocumentMoniker": "PRS.cs",
-              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\PRS.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\PRS.cs",
               "RelativeToolTip": "PRS.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAiwN0BAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAIcDAAAAAAAAAAAlwJ0DAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-19T16:57:47.322Z",
               "IsPinned": true,
@@ -55,14 +71,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RecordPRD.cs",
-              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\RecordPRD.cs",
-              "RelativeDocumentMoniker": "RecordPRD.cs",
-              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\Lib\\RecordPRD.cs",
-              "RelativeToolTip": "RecordPRD.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Title": "RecordPRS.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\RecordPRS.cs",
+              "RelativeDocumentMoniker": "RecordPRS.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\RecordPRS.cs",
+              "RelativeToolTip": "RecordPRS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T12:00:31.64Z",
+              "WhenOpened": "2026-04-30T03:43:21.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HeaderPRS.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\HeaderPRS.cs",
+              "RelativeDocumentMoniker": "HeaderPRS.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\HeaderPRS.cs",
+              "RelativeToolTip": "HeaderPRS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T03:42:41.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IFile.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\IFile.cs",
+              "RelativeDocumentMoniker": "IFile.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\IFile.cs",
+              "RelativeToolTip": "IFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T02:26:06.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HeaderPRD.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\HeaderPRD.cs",
+              "RelativeDocumentMoniker": "HeaderPRD.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\HeaderPRD.cs",
+              "RelativeToolTip": "HeaderPRD.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T02:25:59.772Z",
               "EditorCaption": ""
             },
             {
@@ -72,6 +127,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{73068c07-fba1-453f-99ae-6edf972119b2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecordPRD.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\RecordPRD.cs",
+              "RelativeDocumentMoniker": "RecordPRD.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\u043E\u0441\u043B\u0430\u0432\\source\\repos\\TMPLaba1-Full-Revork-master\\Lib\\RecordPRD.cs",
+              "RelativeToolTip": "RecordPRD.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:00:31.64Z",
+              "EditorCaption": ""
             }
           ]
         },

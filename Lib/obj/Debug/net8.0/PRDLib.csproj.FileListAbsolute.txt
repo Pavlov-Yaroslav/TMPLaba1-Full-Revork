@@ -33,3 +33,26 @@ C:\Users\Ярослав\source\repos\Lib\obj\Debug\net8.0\PRDLib.dll
 C:\Users\Ярослав\source\repos\Lib\obj\Debug\net8.0\refint\PRDLib.dll
 C:\Users\Ярослав\source\repos\Lib\obj\Debug\net8.0\PRDLib.pdb
 C:\Users\Ярослав\source\repos\Lib\obj\Debug\net8.0\ref\PRDLib.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\bin\Debug\net8.0\PRDLib.deps.json
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\bin\Debug\net8.0\PRDLib.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\bin\Debug\net8.0\PRDLib.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\PRDLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\PRDLib.AssemblyInfoInputs.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\PRDLib.AssemblyInfo.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\PRDLib.csproj.CoreCompileInputs.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\PRDLib.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\refint\PRDLib.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\PRDLib.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\Lib\obj\Debug\net8.0\ref\PRDLib.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\bin\Debug\net8.0\PRDLib.deps.json
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\bin\Debug\net8.0\PRDLib.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\bin\Debug\net8.0\PRDLib.pdb
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.AssemblyInfoInputs.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.AssemblyInfo.cs
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.csproj.CoreCompileInputs.cache
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.sourcelink.json
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\refint\PRDLib.dll
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\PRDLib.pdb
+D:\НГТУ\4 семестр\ТиМП\LAB1.2\Lib\obj\Debug\net8.0\ref\PRDLib.dll

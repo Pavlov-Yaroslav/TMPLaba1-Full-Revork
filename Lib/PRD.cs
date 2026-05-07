@@ -5,6 +5,13 @@
 /// </summary>
 enum Type { PRODUCT, ASSEMBLY, DETAIL, UNKNOWN };
 
+public enum ComponentType
+{
+    PRODUCT,
+    ASSEMBLY,
+    DETAIL
+}
+
 namespace TMPLAB1
 {
     /// <summary>
@@ -19,8 +26,13 @@ namespace TMPLAB1
         // Смещение до поля p_Next в записи PRS: flag(1) + p_Product(4) + p_Detail(4) + multiOcc(2)
         const int PRS_NEXT_OFFSET = 11;
 
+        // 2 (Сигнтаура) + 2 (Длина записи) + 4 (указатель на первую запись) + 4 (указатель на свободное место) + 16 (имя файла спецификации)
+        const int HEADER_OFFSET = 28;
+        
         public byte[] NameSpec { get; set; } = new byte[16];
+        
         public bool IsOpen { get; set; }
+        
         public string CurrentFileName { get; set; }
 
         private string _currentDirectory;
@@ -684,6 +696,9 @@ namespace TMPLAB1
         }
 
 
+        /// <summary>
+        /// Выводит спецификацию отдельного изделия
+        /// </summary>
         public void Print(string name)
         {
             if (name == "*")
@@ -728,13 +743,13 @@ namespace TMPLAB1
                     throw new Exception($"Компонент '{name}' не найден!");
                 }
 
-                // СНАЧАЛА ПРОВЕРЯЕМ, НЕ УДАЛЁН ЛИ КОМПОНЕНТ
+                // Сначала проверяем, не удалён ли компонент
                 if (foundRecord.IsDeleted)
                 {
                     throw new Exception($"Компонент '{name}' удалён. Используйте 'Restore {name}' для восстановления.");
                 }
 
-                // ПОТОМ ПРОВЕРЯЕМ, НЕ ДЕТАЛЬ ЛИ ОН
+                // Потом проверяем, не деталь ли он
                 if (foundRecord.IsDetail)
                 {
                     throw new Exception($"Компонент '{name}' является деталью!");
@@ -848,6 +863,10 @@ namespace TMPLAB1
             }
         }
 
+
+        /// <summary>
+        /// Выводит все компоненты в табличной форме
+        /// </summary>
         private void PrintAll()
         {
             try
@@ -861,11 +880,70 @@ namespace TMPLAB1
                         return;
                     }
 
-                    int offset = Header.p_FirstRecord;
+                    string prsFileName = Encoding.UTF8.GetString(Header.NameSpec).TrimEnd('\0');
+                    string prsFullPath = Path.Combine(_currentDirectory, prsFileName);
+
+                    var typeMap = new Dictionary<int, ComponentType>();
+
+                    if (File.Exists(prsFullPath))
+                    {
+                        using (FileStream prsStream = new FileStream(prsFullPath, FileMode.Open, FileAccess.Read))
+                        using (BinaryReader prsReader = new BinaryReader(prsStream))
+                        {
+                            prsStream.Seek(0, SeekOrigin.Begin);
+                            int firstRecord = prsReader.ReadInt32();
+                            int freeSpace = prsReader.ReadInt32();
+
+                            var productSet = new HashSet<int>();
+                            var detailSet = new HashSet<int>();
+
+                            int offset = firstRecord;
+                            while ((offset != -1) && (offset < prsStream.Length))
+                            {
+                                prsStream.Seek(offset, SeekOrigin.Begin);
+                                byte flagDelete = prsReader.ReadByte();
+                                int p_Product = prsReader.ReadInt32();
+                                int p_Detail = prsReader.ReadInt32();
+                                prsReader.ReadUInt16();
+                                int p_Next = prsReader.ReadInt32();
+
+                                if (flagDelete != 0xFF)
+                                {
+                                    productSet.Add(p_Product);
+                                    detailSet.Add(p_Detail);
+                                }
+
+                                offset = p_Next;
+                            }
+
+                            var allComponents = new HashSet<int>(productSet);
+                            allComponents.UnionWith(detailSet);
+
+                            foreach (int compOffset in allComponents)
+                            {
+                                bool inProduct = productSet.Contains(compOffset);
+                                bool inDetail = detailSet.Contains(compOffset);
+
+                                if (inProduct && !inDetail)
+                                { 
+                                    typeMap[compOffset] = ComponentType.PRODUCT;
+                                }
+                                else if (inProduct && inDetail)
+                                { 
+                                    typeMap[compOffset] = ComponentType.ASSEMBLY;
+                                }
+                                else
+                                { 
+                                    typeMap[compOffset] = ComponentType.DETAIL;
+                                }
+                            }
+                        }
+                    }
+
+                    int currentOffset = Header.p_FirstRecord;
                     bool hasLiveRecords = false;
 
-                    // Проверяем, есть ли хоть одна живая запись
-                    int tempOffset = offset;
+                    int tempOffset = currentOffset;
                     while ((tempOffset != -1) && (tempOffset < fs.Length))
                     {
                         fs.Seek(tempOffset, SeekOrigin.Begin);
@@ -885,24 +963,43 @@ namespace TMPLAB1
                         return;
                     }
 
-                    // Сбрасываем позицию
                     fs.Seek(0, SeekOrigin.Begin);
-                    fs.Seek(2 + 2 + 4 + 4 + 16, SeekOrigin.Begin);
+                    fs.Seek(HEADER_OFFSET, SeekOrigin.Begin);
 
                     DrawTableHeader();
 
-                    offset = Header.p_FirstRecord;
-                    while ((offset != -1) && (offset < fs.Length))
+                    currentOffset = Header.p_FirstRecord;
+                    while ((currentOffset != -1) && (currentOffset < fs.Length))
                     {
-                        fs.Seek(offset, SeekOrigin.Begin);
+                        fs.Seek(currentOffset, SeekOrigin.Begin);
                         (RecordPRD read, string nameStr) = ReadRecord(br);
 
                         if (!read.IsDeleted)
                         {
-                            string type = read.IsDetail ? "Деталь" : read.IsAssembly ? "Узел/Изделие" : "Неизвестно";
+                            string type;
+                            if (typeMap.ContainsKey(currentOffset))
+                            {
+                                switch (typeMap[currentOffset])
+                                {
+                                    case ComponentType.PRODUCT:
+                                        type = "Изделие";
+                                        break;
+                                    case ComponentType.ASSEMBLY:
+                                        type = "Узел";
+                                        break;
+                                    default:
+                                        type = "Деталь";
+                                        break;
+                                }
+                            }
+                            else
+                            {
+                                type = "Деталь";
+                            }
+
                             DrawTableRow(nameStr, type);
                         }
-                        offset = read.p_Next;
+                        currentOffset = read.p_Next;
                     }
 
                     DrawTableFooter();

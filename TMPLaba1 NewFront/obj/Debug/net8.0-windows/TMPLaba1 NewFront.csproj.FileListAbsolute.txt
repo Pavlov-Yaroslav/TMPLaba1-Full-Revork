@@ -55,3 +55,31 @@ D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-
 D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.pdb
 D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.genruntimeconfig.cache
 D:\НГТУ\4 семестр\ТиМП\LAB1.2\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ref\TMPLaba1 NewFront.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.exe
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.deps.json
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.runtimeconfig.json
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\TMPLaba1 NewFront.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\PRDLib.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\bin\Debug\net8.0-windows\PRDLib.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.csproj.AssemblyReference.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ComponentsWindow.g.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\SpecificationWindow.g.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront_MarkupCompile.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront_MarkupCompile.lref
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ComponentsWindow.baml
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\SpecificationWindow.baml
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.g.resources
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.AssemblyInfoInputs.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.AssemblyInfo.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.csproj.CoreCompileInputs.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1.6BDF48E5.Up2Date
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\refint\TMPLaba1 NewFront.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\TMPLaba1 NewFront.genruntimeconfig.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\TMPLaba1 NewFront\obj\Debug\net8.0-windows\ref\TMPLaba1 NewFront.dll

@@ -114,3 +114,21 @@ D:\НГТУ\4 семестр\ТиМП\LAB1.2\ConsoleApp\obj\Debug\net8.0\refint\
 D:\НГТУ\4 семестр\ТиМП\LAB1.2\ConsoleApp\obj\Debug\net8.0\TMPLAB1.pdb
 D:\НГТУ\4 семестр\ТиМП\LAB1.2\ConsoleApp\obj\Debug\net8.0\TMPLAB1.genruntimeconfig.cache
 D:\НГТУ\4 семестр\ТиМП\LAB1.2\ConsoleApp\obj\Debug\net8.0\ref\TMPLAB1.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\TMPLAB1.exe
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\TMPLAB1.deps.json
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\TMPLAB1.runtimeconfig.json
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\TMPLAB1.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\TMPLAB1.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\PRDLib.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\bin\Debug\net8.0\PRDLib.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.csproj.AssemblyReference.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.AssemblyInfoInputs.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.AssemblyInfo.cs
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.csproj.CoreCompileInputs.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.csproj.Up2Date
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\refint\TMPLAB1.dll
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.pdb
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\TMPLAB1.genruntimeconfig.cache
+C:\Users\Ярослав\source\repos\TMPLaba1-Full-Revork-master\ConsoleApp\obj\Debug\net8.0\ref\TMPLAB1.dll

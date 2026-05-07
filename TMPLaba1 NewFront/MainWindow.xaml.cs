@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿// MainWindow.xaml.cs
+using Microsoft.Win32;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,19 +14,37 @@ using System.IO;
 
 namespace TMPLaba1_NewFront
 {
+    /// <summary>
+    /// Главное окно приложения. Управляет открытием файлов и координирует
+    /// дочерние окна компонентов и спецификации.
+    /// </summary>
     public partial class MainWindow : Window
     {
+        // Текущий открытый PRD-файл (null, если файл не выбран).
         private PRD? currentPrdFile = null;
-        private PRS? currentPrsFile = null;
-        private ComponentsWindow? CompWindow = null;
-        private SpecificationWindow? SpecWindow = null;
 
+        // Текущий открытый PRS-файл (null, если файл не выбран).
+        private PRS? currentPrsFile = null;
+
+        // Дочернее окно списка компонентов.
+        private ComponentsWindow? сompWindow = null;
+
+        // Дочернее окно спецификации.
+        private SpecificationWindow? specWindow = null;
+
+        /// <summary>
+        /// Инициализирует главное окно и подписывается на событие изменения состояния.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
             this.StateChanged += MainWindow_StateChanged;
         }
 
+        /// <summary>
+        /// Обрабатывает команду «Открыть»: загружает PRD-файл и соответствующий PRS-файл.
+        /// Если PRS-файл отсутствует — создаёт его автоматически.
+        /// </summary>
         private void OpenFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -39,7 +58,6 @@ namespace TMPLaba1_NewFront
                     currentPrdFile = new PRD(openFileDialog.FileName);
                     currentPrdFile.Open();
 
-                    string directory = Path.GetDirectoryName(openFileDialog.FileName) ?? string.Empty;
                     string prsFileName = Path.ChangeExtension(openFileDialog.FileName, ".prs");
 
                     currentPrsFile = new PRS(prsFileName);
@@ -50,108 +68,136 @@ namespace TMPLaba1_NewFront
                     }
                     else
                     {
+                        // Создаём PRS-файл, если он ещё не существует.
                         currentPrsFile.Create();
                         currentPrsFile.Open();
                     }
 
-                    MessageBox.Show($"Файлы успешно загружены",
-                                  "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        "Файлы успешно загружены",
+                        "Успех",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Ошибка при загрузке файлов: {ex.Message}",
-                                  "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(
+                        $"Ошибка при загрузке файлов: {ex.Message}",
+                        "Ошибка",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Error);
                 }
             }
         }
 
+        /// <summary>
+        /// Обрабатывает команду «Компоненты»: открывает или переоткрывает окно списка компонентов.
+        /// </summary>
         private void OpenComponents_Click(object sender, RoutedEventArgs e)
         {
             if ((currentPrdFile == null) || !currentPrdFile.IsOpen)
             {
-                MessageBox.Show("Сначала откройте файл через меню 'Открыть'", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(
+                    "Сначала откройте файл через меню 'Открыть'",
+                    "Предупреждение",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
                 return;
             }
 
-            if (CompWindow != null && CompWindow.IsLoaded)
+            if ((сompWindow != null) && сompWindow.IsLoaded)
             {
-                CompWindow.Close();
-                CompWindow = null;
+                сompWindow.Close();
+                сompWindow = null;
             }
 
-            CompWindow = new ComponentsWindow(currentPrdFile);
-            CompWindow.Show();
+            сompWindow = new ComponentsWindow(currentPrdFile);
+            сompWindow.Show();
         }
 
+        /// <summary>
+        /// Обрабатывает команду «Спецификация»: открывает или переоткрывает окно спецификации.
+        /// </summary>
         private void OpenSpecification_Click(object sender, RoutedEventArgs e)
         {
-            if ((currentPrdFile == null) || !currentPrdFile.IsOpen || (currentPrsFile == null) || !currentPrsFile.IsOpen)
+            if ((currentPrdFile == null) || !currentPrdFile.IsOpen
+                || (currentPrsFile == null) || !currentPrsFile.IsOpen)
             {
-                MessageBox.Show("Сначала откройте файл через меню 'Открыть'", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(
+                    "Сначала откройте файл через меню 'Открыть'",
+                    "Предупреждение",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
                 return;
             }
 
-            if (SpecWindow != null && SpecWindow.IsLoaded)
+            if ((specWindow != null) && specWindow.IsLoaded)
             {
-                SpecWindow.Close();
-                SpecWindow = null;
+                specWindow.Close();
+                specWindow = null;
             }
 
-            SpecWindow = new SpecificationWindow(currentPrdFile, currentPrsFile);
-            SpecWindow.Show();
+            specWindow = new SpecificationWindow(currentPrdFile, currentPrsFile);
+            specWindow.Show();
         }
 
+        /// <summary>
+        /// Синхронизирует состояние дочерних окон при сворачивании и восстановлении главного окна.
+        /// </summary>
         private void MainWindow_StateChanged(object sender, EventArgs e)
         {
             if (this.WindowState == WindowState.Minimized)
             {
                 // Сворачиваем все дочерние окна
-                if (CompWindow != null && CompWindow.IsLoaded)
+                if (сompWindow != null && сompWindow.IsLoaded)
                 {
-                    CompWindow.WindowState = WindowState.Minimized;
+                    сompWindow.WindowState = WindowState.Minimized;
                 }
 
-                if (SpecWindow != null && SpecWindow.IsLoaded)
+                if (specWindow != null && specWindow.IsLoaded)
                 {
-                    SpecWindow.WindowState = WindowState.Minimized;
+                    specWindow.WindowState = WindowState.Minimized;
                 }
             }
             else if (this.WindowState == WindowState.Normal)
             {
-                if (CompWindow != null && CompWindow.IsLoaded && CompWindow.WindowState == WindowState.Minimized)
+                if (сompWindow != null && сompWindow.IsLoaded && сompWindow.WindowState == WindowState.Minimized)
                 {
-                    CompWindow.WindowState = WindowState.Normal;
+                    сompWindow.WindowState = WindowState.Normal;
                 }
 
-                if (SpecWindow != null && SpecWindow.IsLoaded && SpecWindow.WindowState == WindowState.Minimized)
+                if (specWindow != null && specWindow.IsLoaded && specWindow.WindowState == WindowState.Minimized)
                 {
-                    SpecWindow.WindowState = WindowState.Normal;
+                    specWindow.WindowState = WindowState.Normal;
                 }
             }
             else if (this.WindowState == WindowState.Maximized)
             {
-                if (CompWindow != null && CompWindow.IsLoaded && CompWindow.WindowState == WindowState.Minimized)
+                if (сompWindow != null && сompWindow.IsLoaded && сompWindow.WindowState == WindowState.Minimized)
                 {
-                    CompWindow.WindowState = WindowState.Normal;
+                    сompWindow.WindowState = WindowState.Normal;
                 }
 
-                if (SpecWindow != null && SpecWindow.IsLoaded && SpecWindow.WindowState == WindowState.Minimized)
+                if (specWindow != null && specWindow.IsLoaded && specWindow.WindowState == WindowState.Minimized)
                 {
-                    SpecWindow.WindowState = WindowState.Normal;
+                    specWindow.WindowState = WindowState.Normal;
                 }
             }
         }
 
+        /// <summary>
+        /// Закрывает все дочерние окна при закрытии главного окна приложения.
+        /// </summary>
         protected override void OnClosed(EventArgs e)
         {
-            if (CompWindow != null && CompWindow.IsLoaded)
+            if (сompWindow != null && сompWindow.IsLoaded)
             {
-                CompWindow.Close();
+                сompWindow.Close();
             }
 
-            if (SpecWindow != null && SpecWindow.IsLoaded)
+            if (specWindow != null && specWindow.IsLoaded)
             {
-                SpecWindow.Close();
+                specWindow.Close();
             }
 
             base.OnClosed(e);
